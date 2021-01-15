@@ -139,9 +139,9 @@ def experiment(dataMatrix, k):
 def main():
     pickle_file=open('z-scoreData.txt','rb')
     dataMatrix=pickle.load(pickle_file)
-    for k in (2,3,4,5):
-        print("当分类类数为%d时"%(k))
-        experiment(dataMatrix, k)
+    k=5
+    print("当分类类数为%d时"%(k))
+    experiment(dataMatrix, k)
 
 
 
